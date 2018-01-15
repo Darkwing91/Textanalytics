@@ -1,19 +1,89 @@
+<!DOCTYPE html>
+
 <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="hashtagsource.css"> 
+        <title>h a s h t a g s o u r c e</title>
+		<style>
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+} 
+
+nav li {
+  list-style: none;
+  margin: 0.5em;
+  padding: 0;
+  font-size: 1.5em;  
+}
+
+@media (min-width: 45em) {
+  nav ul {	
+    flex-direction: row;  
+  }
+  nav li {
+    flex: 1;
+    font-size: 1em;
+  }  
+}
+
+nav a {
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  padding: 0.4em;
+  text-decoration: none; 
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid darkblue;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px white inset;
+  color: black; 
+  background-color: #e1e1ea; 
+  transition: all .25s ease-in;	  
+}
+
+nav li[aria-current] a {
+  background-color: firebrick; 
+  color: #a2a2c3;
+}
+	
+nav a:focus,
+nav a:hover,
+nav li[aria-current] a:focus,
+nav li[aria-current] a:hover {    
+  color: darkblue; 
+  background-color: #a2a2c3;
+}	
+  
+
+</style>
+
+    </head>
+    
+    <body>
+	
+	    <p><center><h1>h a s h t a g s o u r c e <img src="hashtag.jpg" width="100" height="142" align="middle"> </h1></center> </p>
+		
+        <form>
+           <center> <label for="analyse">Which hashtag do you want to analyse?
+           <input id="analyse" name="analyse">
+           </label></center>
+		</form>
+		
+<nav>
+  <ul>
+    <li><a href="#">What is hashtagsource?</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">Most used hashtags</a></li>
+    <li><a href="#">Statistics</a></li>    
+  </ul>
+</nav>
 
 
-<head>
-</head>
-
-
-<body  style="background-color:beige;">
-
-	   <h1 style="color:black;">HASHTAGSOURCE</h1>
-
-       <img src="hashtag.jpg" alt="HASHTAGSOURCE" width="104" height="142">
-
-
-</body>
-
-
-
-</html> 
+    </body>
+	
+</html>
