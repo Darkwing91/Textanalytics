@@ -1,20 +1,52 @@
-body {
-    background-color: beige;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-size: 12px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 26px;
-    text-align: center;
-}
 
+body{
+}
 
 h1 {
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	font-size: 24px;
+	font-size: 75px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
-	line-height: 26px;
+	font-weight: 500;
+	line-height: 90px;
+    display: inline;
+    float: left;
+    background-color: gray;
+    padding-right: 47%;
+    margin-top: 0%;
 }
+ 
+label {
+    width: 300px;
+    padding-top: 1%;
+   
+}
+.ui-btn {
+    padding-top: 1%;
+    width: 103px;
+    height: 30px;
+}
+#kopfzeile{
+   float:right;
+}
+#kopfzeile2{
+    float:right;
+}
+#analyse{
+    height: 10%;
+    width: 100%;
+    float: none;
+    margin-left: 1px;
+    margin-top: 
+}
+#footer{
+    padding-top: 15%
+    
+}
+#twitter {
+    height: 10%;
+    width: 5%;
+    float: none;
+    margin-left: 390px;
+}
+
