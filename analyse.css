@@ -1,0 +1,40 @@
+#body{
+    background-color: darkgray;
+    height: 1000px;
+  
+}
+
+h1 {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 75px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 90px;
+    display: inline;
+    float: left;
+    padding-right: 47%;
+    margin-top: 0%;
+  
+}
+ .ui-btn {
+    padding-top: 1%;
+    width: 103px;
+    height: 30px;
+    
+   
+}
+
+#kopfzeile{
+   float:right;
+    color:beige;
+  
+}
+#kopfzeile2{
+    float:right;
+}
+
+#at {
+    padding-top: 270px;
+ 
+}
