@@ -1,2 +1,0 @@
-# Textanalytics
-Textanalytics project
