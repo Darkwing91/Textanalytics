@@ -1,0 +1,21 @@
+Dokumentation
+
+Unsere Projekt „Hashtagsource“ des Informatik Praxisprojekts  WS 17/18 „Textanalysewerkzeuge“ ist eine Anwendung, 
+die Twitterdaten von Nutzern analysiert bezüglich des Alters, Geschlechts und Vergleiche des Nutzerverhaltens aufstellt. 
+In der Einrichtung unserer Anwendung mussten zunächst einmal Twitterdaten gesammelt werden mit Twitter4J. 
+Die gesammelten Twitterdaten haben eine Datenbank gebildet. Wenn der Nutzer einen Hashtag auf unserer html- Seite 
+"Hashtagsource" eingibt, werden die Posts aufgegriffen, die Nutzer zu dem eingegebenen Hashtag gepostet haben. 
+Diese Posts durchlaufen eine vorher trainierte Support-Vector-Maschine. In diesem Schritt werden dann die Nutzer 
+aufgrund ihrer Nachrichten in Alters- und Geschlechtsrubriken eingeteilt. Die Altersrubriken sind beispielsweise 
+Klassen von 18 bis 25 oder zum Beispiel 35 bis 45 oder null (für Firmen oder Unternehmen). Die Geschlechtsrubriken 
+sind Männlich, Weiblich, Channel (für Firmen oder Unternehmen) und Bot. 
+Nachdem die Rubriken eingeteilt wurden, werden die Ergebnisse der Einteilungen in eine Statistik überführt, 
+die die Mengen der verschiedenen Nutzer gegenüberstellt. Die Statistik dient als eine Übersicht, die zeigt, welche 
+Posts zu dem Hashtag zu welcher Häufigkeit von den verschiedenen Nutzern gemacht werden.  Die Statistik wird 
+dann als Output auf der html-Seite dem Nutzer angezeigt. 
+Eine Implikation könnte zum Beispiel sein, dass die Filterung der Posts nicht konkret genug ist und viele 
+relevante Posts verloren gehen bei der Suche und stattdessen vermehrt Posts von Bots aufgegriffen werden. 
+Hinsichtlich der Ergebnisse, kann das individuelle Nutzerverhalten anschließend analysiert und ausgewertet werden. 
+Man kann beispielsweise die Häufigkeit der Posts eines Nutzers erkennen und vor allem die Inhalte einordnen und 
+kategorisieren.
+
