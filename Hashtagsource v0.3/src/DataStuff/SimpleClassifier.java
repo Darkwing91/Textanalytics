@@ -18,7 +18,7 @@ public class SimpleClassifier {
 	
 	private void initialize(){
 		ArrayList<User> users = new GenerateUserSet().getTestList();
-		users.addAll(new GenerateUserSet().getTrainingList());
+		//users.addAll(new GenerateUserSet().getTrainingList());
 		bayesGender.setMemoryCapacity(2000);
 		for(User user : users) {
 			bayesGender.learn(user.getGender(), Arrays.asList(user.getName().split("\\s")));
@@ -69,7 +69,7 @@ public class SimpleClassifier {
 	
 	public void classifierTest() {
 		ArrayList<User> users = new GenerateUserSet().getTrainingList();
-		double acc = 0.0;
+		double geacc = 0.0, ageacc = 0.0;
 		int i = 0, j = 0, p = 0;
 		for(User user : users) {
 			p++;
@@ -87,14 +87,20 @@ public class SimpleClassifier {
 					else if (user.getGender().equals("channel"))
 						bayesGender.learn("channel", Arrays.asList(msg.split("\\s")));
 				}
-				//bayesAge.learn(new Integer(user.getAlter()).toString(), Arrays.asList(user.getName().split("\\s")));
-				if(user.getAlter() > 0)
-				bayesAge.learn(new Integer(user.getAlter()).toString(), Arrays.asList(user.getFirstMsg().split("\\s")));*/
+				//bayesAge.learn(new Integer(user.getAlter()).toString(), Arrays.asList(user.getName().split("\\s")));*/
 				i++;
 			}
+			int k = new Integer(cA).intValue();
+			if(user.getAlter() > 0 ){
+				if((user.getAlter()-10) < k && (user.getAlter()+10) > k)
+					j++;
+			}
+				
 		}
-		acc = ((double)i/(double)p);
-		System.out.println("Accuracy: " + acc + ", Hits: " + i + ", Tests: " + p);
+		geacc = ((double)i/(double)p);
+		ageacc = ((double)j/(double)p);
+		System.out.println("Gender Accuracy: " + geacc + ", Hits: " + i + ", Tests: " + p);
+		System.out.println("Age Accuracy: " + ageacc + ", Hits: " + j + ", Tests: " + p);
 	}
 	
 	
