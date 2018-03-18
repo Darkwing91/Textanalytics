@@ -40,10 +40,10 @@ Hier gibt es zwei Auswahlmöglichkeiten:
 /MainPage und /AltPage 
 Unter MainPage findet man eine lauffähige, jedoch abgespeckte Version des Programms.
 Unter AltPage findet man eine alternative Webseite, die schöner Aussieht, auf der jedoch die Daten für den Hashtag nicht richtig abgerufen werden können.
-Um von der Statistik auf die Eingabeseite zurückzukehren reicht ein drücken von F5, bzw. eine Aktualisierung der Seite.
+Um von der Statistik auf die Eingabeseite zurückzukehren reicht ein drücken von Zurück.
 
 Output:
-Hat man einen Hashtag auf */MainPage eingegeben und das Programm zuende laden lassen,
+Hat man einen Hashtag auf /MainPage eingegeben und das Programm zuende laden lassen,
 erhält man die Ergebnisse der Analyse in Form eines Balkendiagramms.
 Auf der linken Seite wird das Vorkommen der einzelnen Geschlechter angezeigt, wobei bot hier für Nachichtenkanäle und einfache Spambots steht.
 Auf der rechten Seite wird das Vorkommen der einzelnen Altersgruppen angezeigt unter der abgegriffenen Nutzern angezeigt. 'unclassified' steht hier für bots.
