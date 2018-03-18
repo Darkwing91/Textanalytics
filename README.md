@@ -3,7 +3,6 @@ Textanalytics project
 
 
 *Vorstellung des Projekts:*
-
 Unser Projekt „Hashtagsource“ des Informatik Praxisprojekts WS 17/18 „Textanalysewerkzeuge“ ist eine Anwendung,
 die Anhand von Nachrichten von Twitternutzern einschätzt, um welches Geschlecht es sich bei dem Nutzer handelt und in welcher Altersgruppe dieser sich befindet.
 Der Nutzer des Programms gibt einen Hashtag in das Suchfeld ein, den er gerne analysieren möchte. Das Programm sammelt daraufhin die Nachrichten der Nutzer,
