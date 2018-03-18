@@ -2,14 +2,14 @@
 Textanalytics project
 
 
-Vorstellung des Projekts:
+*Vorstellung des Projekts:*
 Unser Projekt „Hashtagsource“ des Informatik Praxisprojekts WS 17/18 „Textanalysewerkzeuge“ ist eine Anwendung,
 die Anhand von Nachrichten von Twitternutzern einschätzt, um welches Geschlecht es sich bei dem Nutzer handelt und in welcher Altersgruppe dieser sich befindet.
 Der Nutzer des Programms gibt einen Hashtag in das Suchfeld ein, den er gerne analysieren möchte. Das Programm sammelt daraufhin die Nachrichten der Nutzer,
 die unter dem entsprechenden Hashtag zuletzt etwas gepostet haben. Ein Klassifizierungsalgorithmus entscheidet dann Anhand dieser Nachichten, um welches Geschlecht es sich bei jedem Nutzer handelt und in welcher Altersgruppe er sich befindet.
 Danach werden die ausgewerteten Daten in einer übersichtlichen Statistik angezeigt.
 
-Einrichtung:
+*Einrichtung:*
 Es liegt eine einfache .exe Datei vor, das Projekt kann aber über Eclipse auf einem lokalen Server gestartet werden.
 Import des Programms in Eclipse:
 Zum Importieren des Programms in Eclipse sind folgende Anweisungen zu befolgen:
@@ -18,7 +18,7 @@ Starte Eclipse -> File -> Import -> Existing Maven Porject -> Pfad auswählen ->
 Zum Hinzufügen eines Servers sind folgende Anweisungen zu befolgen:
 Rechtsklick auf Projekt "Hashtagsource_v0.3" -> New -> Other... -> Server -> Tomcat v7.0 Server -> Select host -> Select name -> Select runtime environment: Apache Tomcat v7.0 -> Next -> Select Hashtagsource -> Add -> Finish
 
-Konfiguration:
+*Konfiguration:*
 Bevor ein Test des Programms gelingen kann, müssen die Twitter Inizialisirungsdaten in der Klasse 'TwitterStuff' im Package 'MainStuff' gegen zulässige Twitter Zugangsdaten ausgetauscht werden.
 Dazu benötigt man einen Twitter Account und von diesem Twitter Account einen zulässigen ConsumerKey, ein ConsumerSecret, ein AccesToken, sowie ein AccessTokenSecretm, diese erhalten sie auf ihrem Twitter Account.
 Der zu verändernde Code sieht folgendermaßen aus:
@@ -31,7 +31,7 @@ cb.setDebugEnabled(true)
      
 Er befindet sich im Konstruktor der Klasse.
 
-Verwendung:
+*Verwendung:*
 Ist alles Vorbereitet und Konfiguriert, kann man den Server starten.
 Das Programm ist dann unter der Adresse:
 localhost:8080/Hashtagsource_v0.3/
@@ -42,14 +42,14 @@ Unter MainPage findet man eine lauffähige, jedoch abgespeckte Version des Progr
 Unter AltPage findet man eine alternative Webseite, die schöner aussieht, auf der jedoch die Daten für den Hashtag nicht richtig abgerufen werden können.
 Um von der Statistik auf die Eingabeseite zurückzukehren, reicht ein Drücken von Zurück.
 
-Output:
+*Output:*
 Hat man einen Hashtag auf /MainPage eingegeben und das Programm zuende laden lassen,
 erhält man die Ergebnisse der Analyse in Form eines Balkendiagramms.
 Auf der linken Seite wird das Vorkommen der einzelnen Geschlechter angezeigt, wobei bot hier für Nachichtenkanäle und einfache Spambots steht.
 Auf der rechten Seite wird das Vorkommen der einzelnen Altersgruppen angezeigt unter der abgegriffenen Nutzern anzeigt. 'unclassified' steht hier für bots.
 Die Überschrift gibt an, welcher Hashtag analysiert wurde und wie viele Nutzer analysiert wurden.
 
-Evaluation:
+*Evaluation:*
 Im Folgenden wird die Evaluation gewisser Funktionen erläutert.
 
 Der Classifier, der den einzelnen Nutzern anhand ihrer Nachichten ein Geschlecht und eine Altersklasse zuordnet. 
